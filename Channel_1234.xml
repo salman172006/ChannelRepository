@@ -2,8 +2,8 @@
   <id>e67c3206-76a3-4ba6-a78b-b0f24041b3f0</id>
   <nextMetaDataId>2</nextMetaDataId>
   <name>Channel_1234</name>
-  <description>This channel has been created for test.</description>
-  <revision>34</revision>
+  <description>This is channel 1234</description>
+  <revision>35</revision>
   <sourceConnector version="3.9.0">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -172,11 +172,11 @@ return;</undeployScript>
   <properties version="3.9.0">
     <clearGlobalChannelMap>true</clearGlobalChannelMap>
     <messageStorageMode>DEVELOPMENT</messageStorageMode>
-    <encryptData>true</encryptData>
-    <removeContentOnCompletion>true</removeContentOnCompletion>
+    <encryptData>false</encryptData>
+    <removeContentOnCompletion>false</removeContentOnCompletion>
     <removeOnlyFilteredOnCompletion>false</removeOnlyFilteredOnCompletion>
-    <removeAttachmentsOnCompletion>true</removeAttachmentsOnCompletion>
-    <initialState>STARTED</initialState>
+    <removeAttachmentsOnCompletion>false</removeAttachmentsOnCompletion>
+    <initialState>STOPPED</initialState>
     <storeAttachments>true</storeAttachments>
     <metaDataColumns>
       <metaDataColumn>
@@ -194,15 +194,23 @@ return;</undeployScript>
         <type>STRING</type>
         <mappingName>mirth_type</mappingName>
       </metaDataColumn>
+      <metaDataColumn>
+        <name>ABC</name>
+        <type>STRING</type>
+        <mappingName>mirth_type</mappingName>
+      </metaDataColumn>
     </metaDataColumns>
     <attachmentProperties version="3.9.0">
-      <className>com.mirth.connect.server.attachments.javascript.JavaScriptAttachmentHandlerProvider</className>
-      <type>JavaScript</type>
+      <className>com.mirth.connect.server.attachments.regex.RegexAttachmentHandlerProvider</className>
+      <type>Regex</type>
       <properties>
         <entry>
-          <string>javascript.script</string>
-          <string>// Modify the message variable below to create attachments
-return message;</string>
+          <string>regex.pattern0</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>regex.mimetype0</string>
+          <string></string>
         </entry>
       </properties>
     </attachmentProperties>
@@ -217,7 +225,7 @@ return message;</string>
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1589899826298</time>
+        <time>1589899903863</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
