@@ -1,9 +1,9 @@
 <channel version="3.9.0">
   <id>e67c3206-76a3-4ba6-a78b-b0f24041b3f0</id>
   <nextMetaDataId>2</nextMetaDataId>
-  <name>channel_1_1234</name>
+  <name>channel_1_123456</name>
   <description>This channel has been created for test.</description>
-  <revision>24</revision>
+  <revision>25</revision>
   <sourceConnector version="3.9.0">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -217,7 +217,7 @@ return message;</string>
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1589882619123</time>
+        <time>1589883635816</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
