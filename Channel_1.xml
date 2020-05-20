@@ -1,9 +1,9 @@
 <channel version="3.9.0">
   <id>e67c3206-76a3-4ba6-a78b-b0f24041b3f0</id>
   <nextMetaDataId>2</nextMetaDataId>
-  <name>Channel_1</name>
+  <name>Channel_1_12345</name>
   <description>This is channel 1234</description>
-  <revision>44</revision>
+  <revision>45</revision>
   <sourceConnector version="3.9.0">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -170,7 +170,7 @@ return;</deployScript>
 // You only have access to the globalMap and globalChannelMap here to persist data
 return;</undeployScript>
   <properties version="3.9.0">
-    <clearGlobalChannelMap>true</clearGlobalChannelMap>
+    <clearGlobalChannelMap>false</clearGlobalChannelMap>
     <messageStorageMode>DEVELOPMENT</messageStorageMode>
     <encryptData>false</encryptData>
     <removeContentOnCompletion>false</removeContentOnCompletion>
@@ -225,7 +225,7 @@ return;</undeployScript>
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1589987358080</time>
+        <time>1589988370385</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
