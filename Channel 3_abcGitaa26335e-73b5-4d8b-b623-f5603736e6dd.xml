@@ -1,9 +1,9 @@
 <channel version="3.9.0">
   <id>aa26335e-73b5-4d8b-b623-f5603736e6dd</id>
   <nextMetaDataId>2</nextMetaDataId>
-  <name>Channel 3</name>
+  <name>Channel 3_1234</name>
   <description></description>
-  <revision>4</revision>
+  <revision>5</revision>
   <sourceConnector version="3.9.0">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -367,7 +367,7 @@ return;</undeployScript>
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1590056484666</time>
+        <time>1590056549616</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
