@@ -3,7 +3,7 @@
   <nextMetaDataId>2</nextMetaDataId>
   <name>channel 2_12345</name>
   <description>hello</description>
-  <revision>22</revision>
+  <revision>0</revision>
   <sourceConnector version="3.9.0">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -206,7 +206,7 @@ return;</undeployScript>
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1590158841264</time>
+        <time>1590159525817</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
