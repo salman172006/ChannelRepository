@@ -3,7 +3,7 @@
   <nextMetaDataId>2</nextMetaDataId>
   <name>channel 2_abc</name>
   <description>hello</description>
-  <revision>18</revision>
+  <revision>19</revision>
   <sourceConnector version="3.9.0">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -176,7 +176,7 @@ return;</undeployScript>
     <removeContentOnCompletion>false</removeContentOnCompletion>
     <removeOnlyFilteredOnCompletion>false</removeOnlyFilteredOnCompletion>
     <removeAttachmentsOnCompletion>false</removeAttachmentsOnCompletion>
-    <initialState>STARTED</initialState>
+    <initialState>STOPPED</initialState>
     <storeAttachments>true</storeAttachments>
     <metaDataColumns>
       <metaDataColumn>
@@ -206,7 +206,7 @@ return;</undeployScript>
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1590151339862</time>
+        <time>1590151419363</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
