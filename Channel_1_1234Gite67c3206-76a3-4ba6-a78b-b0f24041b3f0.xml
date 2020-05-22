@@ -3,7 +3,7 @@
   <nextMetaDataId>2</nextMetaDataId>
   <name>Channel_1_1234</name>
   <description>This is channel 1234</description>
-  <revision>54</revision>
+  <revision>55</revision>
   <sourceConnector version="3.9.0">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -176,7 +176,7 @@ return;</undeployScript>
     <removeContentOnCompletion>false</removeContentOnCompletion>
     <removeOnlyFilteredOnCompletion>false</removeOnlyFilteredOnCompletion>
     <removeAttachmentsOnCompletion>false</removeAttachmentsOnCompletion>
-    <initialState>STARTED</initialState>
+    <initialState>PAUSED</initialState>
     <storeAttachments>true</storeAttachments>
     <metaDataColumns>
       <metaDataColumn>
@@ -225,7 +225,7 @@ return;</undeployScript>
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1590150491992</time>
+        <time>1590150518520</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
