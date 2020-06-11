@@ -1,9 +1,9 @@
 <channel version="3.9.0">
   <id>c3c3a56d-c316-41c2-8c31-6a9f4f13bbb3</id>
   <nextMetaDataId>2</nextMetaDataId>
-  <name>Channel C_2</name>
+  <name>Channel C_7</name>
   <description>This is Channel C_1</description>
-  <revision>2</revision>
+  <revision>6</revision>
   <sourceConnector version="3.9.0">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -353,13 +353,16 @@ return;</undeployScript>
       </metaDataColumn>
     </metaDataColumns>
     <attachmentProperties version="3.9.0">
-      <className>com.mirth.connect.server.attachments.javascript.JavaScriptAttachmentHandlerProvider</className>
-      <type>JavaScript</type>
+      <className>com.mirth.connect.server.attachments.regex.RegexAttachmentHandlerProvider</className>
+      <type>Regex</type>
       <properties>
         <entry>
-          <string>javascript.script</string>
-          <string>// Modify the message variable below to create attachments
-return message;</string>
+          <string>regex.pattern0</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>regex.mimetype0</string>
+          <string></string>
         </entry>
       </properties>
     </attachmentProperties>
@@ -374,7 +377,7 @@ return message;</string>
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1591874526800</time>
+        <time>1591885876273</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
