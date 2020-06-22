@@ -2,8 +2,9 @@
   <id>15a2a95f-7e4e-4682-a3b1-9e14b7c91c7c</id>
   <nextMetaDataId>2</nextMetaDataId>
   <name>Channel A_6</name>
-  <description>Check for the differences</description>
-  <revision>33</revision>
+  <description>Check for the differences
+added to find the conflics</description>
+  <revision>34</revision>
   <sourceConnector version="3.9.0">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -333,7 +334,12 @@ return;</undeployScript>
     <attachmentProperties version="3.9.0">
       <className>com.mirth.connect.server.attachments.identity.IdentityAttachmentHandlerProvider</className>
       <type>Entire Message</type>
-      <properties/>
+      <properties>
+        <entry>
+          <string>identity.mimetype</string>
+          <string></string>
+        </entry>
+      </properties>
     </attachmentProperties>
     <resourceIds class="linked-hash-map">
       <entry>
@@ -346,7 +352,7 @@ return;</undeployScript>
     <metadata>
       <enabled>false</enabled>
       <lastModified>
-        <time>1592822143504</time>
+        <time>1592822858936</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
