@@ -2,8 +2,8 @@
   <id>15a2a95f-7e4e-4682-a3b1-9e14b7c91c7c</id>
   <nextMetaDataId>2</nextMetaDataId>
   <name>Channel A_6</name>
-  <description></description>
-  <revision>32</revision>
+  <description>Check for the differences</description>
+  <revision>33</revision>
   <sourceConnector version="3.9.0">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -11,8 +11,8 @@
       <pluginProperties/>
       <sourceConnectorProperties version="3.9.0">
         <responseVariable>None</responseVariable>
-        <respondAfterProcessing>true</respondAfterProcessing>
-        <processBatch>false</processBatch>
+        <respondAfterProcessing>false</respondAfterProcessing>
+        <processBatch>true</processBatch>
         <firstResponse>false</firstResponse>
         <processingThreads>1</processingThreads>
         <resourceIds class="linked-hash-map">
@@ -26,46 +26,19 @@
     </properties>
     <transformer version="3.9.0">
       <elements/>
-      <inboundDataType>HL7V2</inboundDataType>
+      <inboundDataType>XML</inboundDataType>
       <outboundDataType>HL7V2</outboundDataType>
-      <inboundProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2DataTypeProperties" version="3.9.0">
-        <serializationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2SerializationProperties" version="3.9.0">
-          <handleRepetitions>true</handleRepetitions>
-          <handleSubcomponents>true</handleSubcomponents>
-          <useStrictParser>false</useStrictParser>
-          <useStrictValidation>false</useStrictValidation>
-          <stripNamespaces>true</stripNamespaces>
-          <segmentDelimiter>\r</segmentDelimiter>
-          <convertLineBreaks>true</convertLineBreaks>
+      <inboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.9.0">
+        <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.9.0">
+          <stripNamespaces>false</stripNamespaces>
         </serializationProperties>
-        <deserializationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2DeserializationProperties" version="3.9.0">
-          <useStrictParser>false</useStrictParser>
-          <useStrictValidation>false</useStrictValidation>
-          <segmentDelimiter>\r</segmentDelimiter>
-        </deserializationProperties>
-        <batchProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2BatchProperties" version="3.9.0">
-          <splitType>MSH_Segment</splitType>
+        <batchProperties class="com.mirth.connect.plugins.datatypes.xml.XMLBatchProperties" version="3.9.0">
+          <splitType>Level</splitType>
+          <elementName>root</elementName>
+          <level>1</level>
+          <query></query>
           <batchScript></batchScript>
         </batchProperties>
-        <responseGenerationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2ResponseGenerationProperties" version="3.9.0">
-          <segmentDelimiter>\r</segmentDelimiter>
-          <successfulACKCode>AA</successfulACKCode>
-          <successfulACKMessage></successfulACKMessage>
-          <errorACKCode>AE</errorACKCode>
-          <errorACKMessage>An Error Occurred Processing Message.</errorACKMessage>
-          <rejectedACKCode>AR</rejectedACKCode>
-          <rejectedACKMessage>Message Rejected.</rejectedACKMessage>
-          <msh15ACKAccept>false</msh15ACKAccept>
-          <dateFormat>yyyyMMddHHmmss.SSS</dateFormat>
-        </responseGenerationProperties>
-        <responseValidationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2ResponseValidationProperties" version="3.9.0">
-          <successfulACKCode>AA,CA</successfulACKCode>
-          <errorACKCode>AE,CE</errorACKCode>
-          <rejectedACKCode>AR,CR</rejectedACKCode>
-          <validateMessageControlId>true</validateMessageControlId>
-          <originalMessageControlId>Destination_Encoded</originalMessageControlId>
-          <originalIdMapVariable></originalIdMapVariable>
-        </responseValidationProperties>
       </inboundProperties>
       <outboundProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2DataTypeProperties" version="3.9.0">
         <serializationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2SerializationProperties" version="3.9.0">
@@ -351,9 +324,15 @@ return;</undeployScript>
         <type>STRING</type>
         <mappingName>mirth_type</mappingName>
       </metaDataColumn>
+      <metaDataColumn>
+        <name>DESTINATION</name>
+        <type>STRING</type>
+        <mappingName>mirthdestination</mappingName>
+      </metaDataColumn>
     </metaDataColumns>
     <attachmentProperties version="3.9.0">
-      <type>None</type>
+      <className>com.mirth.connect.server.attachments.identity.IdentityAttachmentHandlerProvider</className>
+      <type>Entire Message</type>
       <properties/>
     </attachmentProperties>
     <resourceIds class="linked-hash-map">
@@ -365,9 +344,9 @@ return;</undeployScript>
   </properties>
   <exportData>
     <metadata>
-      <enabled>true</enabled>
+      <enabled>false</enabled>
       <lastModified>
-        <time>1592802332516</time>
+        <time>1592822143504</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
