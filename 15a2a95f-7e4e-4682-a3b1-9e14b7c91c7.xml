@@ -1,9 +1,9 @@
 <channel version="3.9.0">
   <id>15a2a95f-7e4e-4682-a3b1-9e14b7c91c7c</id>
   <nextMetaDataId>2</nextMetaDataId>
-  <name>Channel A_6</name>
+  <name>Channel A</name>
   <description></description>
-  <revision>32</revision>
+  <revision>0</revision>
   <sourceConnector version="3.9.0">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -21,12 +21,12 @@
             <string>[Default Resource]</string>
           </entry>
         </resourceIds>
-        <queueBufferSize>1000</queueBufferSize>
+        <queueBufferSize>10</queueBufferSize>
       </sourceConnectorProperties>
     </properties>
     <transformer version="3.9.0">
       <elements/>
-      <inboundDataType>HL7V2</inboundDataType>
+      <inboundDataType>HL7</inboundDataType>
       <outboundDataType>HL7V2</outboundDataType>
       <inboundProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2DataTypeProperties" version="3.9.0">
         <serializationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2SerializationProperties" version="3.9.0">
@@ -367,7 +367,7 @@ return;</undeployScript>
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1592802332516</time>
+        <time>1592391525175</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
