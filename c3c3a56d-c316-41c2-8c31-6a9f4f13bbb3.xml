@@ -3,7 +3,7 @@
   <nextMetaDataId>2</nextMetaDataId>
   <name>Channel C</name>
   <description>This is Channel C_1</description>
-  <revision>0</revision>
+  <revision>14</revision>
   <sourceConnector version="3.9.0">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -143,7 +143,9 @@
         </destinationConnectorProperties>
         <channelId>none</channelId>
         <channelTemplate>${message.encodedData}</channelTemplate>
-        <mapVariables/>
+        <mapVariables>
+          <string>ab</string>
+        </mapVariables>
       </properties>
       <transformer version="3.9.0">
         <elements/>
@@ -377,7 +379,7 @@ return;</undeployScript>
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1592991217204</time>
+        <time>1593172764004</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
