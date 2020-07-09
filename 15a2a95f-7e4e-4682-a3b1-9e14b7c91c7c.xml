@@ -1,7 +1,7 @@
 <channel version="3.9.0">
   <id>15a2a95f-7e4e-4682-a3b1-9e14b7c91c7c</id>
   <nextMetaDataId>2</nextMetaDataId>
-  <name>Channel A_9</name>
+  <name>Channel A_10</name>
   <description>Check for the differences.....</description>
   <revision>45</revision>
   <sourceConnector version="3.9.0">
@@ -346,7 +346,7 @@ return;</undeployScript>
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1593691439533</time>
+        <time>1594295031091</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
