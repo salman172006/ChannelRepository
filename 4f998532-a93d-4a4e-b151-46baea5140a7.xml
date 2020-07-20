@@ -2,7 +2,7 @@
   <id>4f998532-a93d-4a4e-b151-46baea5140a7</id>
   <nextMetaDataId>2</nextMetaDataId>
   <name>channel E</name>
-  <description></description>
+  <description>added desc</description>
   <revision>1</revision>
   <sourceConnector version="3.9.0">
     <metaDataId>0</metaDataId>
@@ -367,7 +367,7 @@ return;</undeployScript>
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1595262544283</time>
+        <time>1595262595193</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
