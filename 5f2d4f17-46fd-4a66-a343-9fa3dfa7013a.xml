@@ -1,22 +1,14 @@
 <channel version="3.9.0">
   <id>5f2d4f17-46fd-4a66-a343-9fa3dfa7013a</id>
   <nextMetaDataId>2</nextMetaDataId>
-  <name>Channel 15_C</name>
-  <description>This is channel 15_C</description>
-  <revision>5</revision>
+  <name>Channel 15_B</name>
+  <description>This is channel 15_B</description>
+  <revision>0</revision>
   <sourceConnector version="3.9.0">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
-    <properties class="com.mirth.connect.connectors.ws.WebServiceReceiverProperties" version="3.9.0">
-      <pluginProperties>
-        <com.mirth.connect.plugins.httpauth.NoneHttpAuthProperties version="3.9.0">
-  <authType>NONE</authType>
-        </com.mirth.connect.plugins.httpauth.NoneHttpAuthProperties>
-      </pluginProperties>
-      <listenerConnectorProperties version="3.9.0">
-        <host>0.0.0.0</host>
-        <port>8081</port>
-      </listenerConnectorProperties>
+    <properties class="com.mirth.connect.connectors.vm.VmReceiverProperties" version="3.9.0">
+      <pluginProperties/>
       <sourceConnectorProperties version="3.9.0">
         <responseVariable>None</responseVariable>
         <respondAfterProcessing>true</respondAfterProcessing>
@@ -31,9 +23,6 @@
         </resourceIds>
         <queueBufferSize>150</queueBufferSize>
       </sourceConnectorProperties>
-      <className>com.mirth.connect.connectors.ws.DefaultAcceptMessage</className>
-      <serviceName>Mirth</serviceName>
-      <soapBinding>DEFAULT</soapBinding>
     </properties>
     <transformer version="3.9.0">
       <elements/>
@@ -121,7 +110,7 @@
     <filter version="3.9.0">
       <elements/>
     </filter>
-    <transportName>Web Service Listener</transportName>
+    <transportName>Channel Reader</transportName>
     <mode>SOURCE</mode>
     <enabled>true</enabled>
     <waitForPrevious>true</waitForPrevious>
@@ -364,8 +353,7 @@ return;</undeployScript>
       </metaDataColumn>
     </metaDataColumns>
     <attachmentProperties version="3.9.0">
-      <className>com.mirth.connect.server.attachments.dicom.DICOMAttachmentHandlerProvider</className>
-      <type>DICOM</type>
+      <type>None</type>
       <properties/>
     </attachmentProperties>
     <resourceIds class="linked-hash-map">
@@ -379,7 +367,7 @@ return;</undeployScript>
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1598371001388</time>
+        <time>1598374028247</time>
         <timezone>Asia/Calcutta</timezone>
       </lastModified>
       <pruningSettings>
